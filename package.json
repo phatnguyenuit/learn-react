@@ -1,0 +1,28 @@
+{
+  "name": "learn-react",
+  "version": "1.0.0",
+  "description": "Some code examples to learn React as a beginner.",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phatnguyenuit/learn-react.git"
+  },
+  "keywords": [
+    "react",
+    "beginner",
+    "examples"
+  ],
+  "author": "PhatNguyen <phatnt.uit@gmail.com> (https://phatnguyenuit.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phatnguyenuit/learn-react/issues"
+  },
+  "homepage": "https://github.com/phatnguyenuit/learn-react#readme",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "prettier": "^2.0.5"
+  }
+}
