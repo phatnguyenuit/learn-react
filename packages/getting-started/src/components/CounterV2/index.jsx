@@ -8,6 +8,21 @@ export default class CounterV2 extends Component {
     };
   }
 
+  componentDidMount() {
+    console.log(
+      'Component did mount. It means your UI has been rendered on the browser.',
+    );
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    console.log(
+      'Component did update. It means your UI has been re-rendered on the browser.',
+    );
+    console.log('Updated props | state');
+    console.log(prevProps, this.props);
+    console.log(prevState, this.state);
+  }
+
   handleClickIncrease = () => {
     // Use updater to return new state from old state
     this.setState(oldState => ({
