@@ -36,13 +36,29 @@ export default class CounterV2 extends Component {
     }));
   };
 
+  handleIncreaseTwoTimes = () => {
+    this.handleClickIncrease();
+    this.handleClickIncrease();
+  };
+
+  handleDecreaseTwoTimes = () => {
+    this.handleClickDecrease();
+    this.handleClickDecrease();
+  };
+
   render() {
     const { count } = this.state;
     return (
       <div>
         <div>
           <button onClick={this.handleClickDecrease}>Decrease</button>{' '}
-          <button onClick={this.handleClickIncrease}>Increase</button>
+          <button onClick={this.handleIncreaseTwoTimes}>Increase</button>{' '}
+          <button onClick={this.handleIncreaseTwoTimes}>
+            Increase 2 times
+          </button>{' '}
+          <button onClick={this.handleDecreaseTwoTimes}>
+            Decrease 2 times
+          </button>
         </div>
         <p>{count}</p>
       </div>
