@@ -52,7 +52,7 @@ export default class CounterV2 extends Component {
       <div>
         <div>
           <button onClick={this.handleClickDecrease}>Decrease</button>{' '}
-          <button onClick={this.handleIncreaseTwoTimes}>Increase</button>{' '}
+          <button onClick={this.handleClickIncrease}>Increase</button>{' '}
           <button onClick={this.handleIncreaseTwoTimes}>
             Increase 2 times
           </button>{' '}

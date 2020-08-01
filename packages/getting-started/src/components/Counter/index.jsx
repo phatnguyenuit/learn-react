@@ -53,7 +53,7 @@ export default class Counter extends Component {
       <div>
         <div>
           <button onClick={this.handleClickDecrease}>Decrease</button>{' '}
-          <button onClick={this.handleIncreaseTwoTimes}>Increase</button>{' '}
+          <button onClick={this.handleClickIncrease}>Increase</button>{' '}
           <button onClick={this.handleIncreaseTwoTimes}>
             Increase 2 times
           </button>{' '}
