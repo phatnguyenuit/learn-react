@@ -9,18 +9,22 @@ export default class CounterV2 extends Component {
   }
 
   componentDidMount() {
+    console.log(`== CounterV2 ==`);
     console.log(
       'Component did mount. It means your UI has been rendered on the browser.',
     );
+    console.log(`== CounterV2 ==`);
   }
 
   componentDidUpdate(prevProps, prevState) {
+    console.log(`== CounterV2 ==`);
     console.log(
       'Component did update. It means your UI has been re-rendered on the browser.',
     );
     console.log('Updated props | state');
     console.log(prevProps, this.props);
     console.log(prevState, this.state);
+    console.log(`== CounterV2 ==`);
   }
 
   handleClickIncrease = () => {
