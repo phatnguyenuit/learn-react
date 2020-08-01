@@ -26,7 +26,7 @@ export default class LearningApp extends Component {
           value={selectedAppName}
           onChange={this.handleChangeApp}
         >
-          <option value="">Select app</option>
+          <option value="">-- Select app --</option>
           {Object.keys(apps).map(appName => (
             <option key={appName} value={appName}>
               {appName}
