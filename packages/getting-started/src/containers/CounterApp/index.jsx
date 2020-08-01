@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 
-import Counter from './components/Counter';
-import CounterV2 from './components/CounterV2';
+import Counter from '../../components/Counter';
+import CounterV2 from '../../components/CounterV2';
 
-export default class LearningApp extends Component {
-
+export default class CounterApp extends Component {
   render() {
     return (
       <React.Fragment>
