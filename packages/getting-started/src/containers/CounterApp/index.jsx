@@ -8,6 +8,21 @@ export default class CounterApp extends Component {
     return (
       <React.Fragment>
         <div>
+          <pre>
+            This app includes Counters and some techniques like:{' '}
+            <p>
+              <strong>
+                <code>setState</code>
+              </strong>
+            </p>
+            <p>
+              <strong>
+                <code>Event handlers</code>
+              </strong>
+            </p>
+          </pre>
+        </div>
+        <div>
           <h4>Counter</h4>
           <Counter />
         </div>
