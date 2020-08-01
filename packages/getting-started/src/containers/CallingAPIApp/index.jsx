@@ -24,7 +24,19 @@ export default class CallingAPIApp extends Component {
         </div>
         <div>
           <div>
-            <p>Auto Call API on the 1st render</p>
+            <p>
+              <strong>Call API on demand</strong>
+            </p>
+            <Fetch
+              autoCallAPI={false}
+              url="https://jsonplaceholder.typicode.com/users/1"
+              method="GET"
+            />
+          </div>
+          <div>
+            <p>
+              <strong>Auto Call API after the 1st render</strong>
+            </p>
             <Fetch
               autoCallAPI
               url="https://jsonplaceholder.typicode.com/users/1"
@@ -32,12 +44,10 @@ export default class CallingAPIApp extends Component {
             />
           </div>
           <div>
-            <p>Call API on demand</p>
-            <Fetch
-              autoCallAPI={false}
-              url="https://jsonplaceholder.typicode.com/users/1"
-              method="GET"
-            />
+            <p>
+              <strong>Call API error</strong>
+            </p>
+            <Fetch autoCallAPI url="https://not.available.url" method="GET" />
           </div>
         </div>
       </div>

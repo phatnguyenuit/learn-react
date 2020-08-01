@@ -22,7 +22,7 @@ export default class Fetch extends Component {
     const { url, method = 'GET' } = this.props;
 
     // Set loading = true
-    this.setState({ loading: true });
+    this.setState({ loading: true, response: undefined, error: '' });
 
     // Call API with fetch method
     fetch(url, { method: method })
@@ -35,7 +35,7 @@ export default class Fetch extends Component {
       })
       // parsed json response
       .then(response => {
-        this.setState({ response, error: undefined });
+        this.setState({ response, error: '' });
       })
       .catch(error => {
         this.setState({ error: error.message, response: undefined });
