@@ -25,6 +25,7 @@ export default class CounterV2 extends Component {
 
   handleClickIncrease = () => {
     // Use updater to return new state from old state
+    // Reference: https://reactjs.org/docs/state-and-lifecycle.html#state-updates-may-be-asynchronous
     this.setState(oldState => ({
       count: oldState.count + 1,
     }));
