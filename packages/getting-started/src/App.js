@@ -1,6 +1,7 @@
 import React from 'react';
 
 import LearningApp from './LearningApp';
+import LearnHookApp from './LearnHookApp';
 
 import logo from './logo.svg';
 import './App.css';
@@ -23,6 +24,7 @@ function App() {
         </a>
       </header>
       <LearningApp />
+      <LearnHookApp />
     </div>
   );
 }

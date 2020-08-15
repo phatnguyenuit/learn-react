@@ -5,7 +5,7 @@ export default class LearningApp extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedAppName: 'counter',
+      selectedAppName: '',
     };
   }
 
