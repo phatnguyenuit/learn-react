@@ -1,0 +1,22 @@
+.app-root {
+  margin: 0 auto;
+  text-align: left;
+  width: 500px;
+}
+
+.counter-root {
+  padding: 16px;
+  width: 200px;
+}
+
+.counter-root>button {
+  margin-right: 8px;
+}
+
+.counter-root>button:last-child {
+  margin-right: 0;
+}
+
+.toogle-container {
+  padding: 16px;
+}
