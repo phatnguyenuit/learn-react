@@ -3,6 +3,9 @@ import { createStore } from 'redux';
 import './styles.css';
 
 // General action includes type and payload (data sent in action)
+
+// reducer is pure function receives prevState/currentState and action
+// returns new state
 const reducer = (prevState, action) => {
   const { type, payload } = action;
   console.log(
@@ -25,6 +28,9 @@ const reducer = (prevState, action) => {
       return prevState;
   }
 };
+
+// create a redux store with createStore method
+// which receives reducer, initial state, and enhancers (middlewares)
 const store = createStore(reducer, 0);
 
 // store.getStet() => current state of store
@@ -33,7 +39,7 @@ const store = createStore(reducer, 0);
 // to store and make reducer run => new state
 
 // store.subscribe(listerner) => unsubscribe func;
-// Invoked after every single dispatchs
+// Invoked after every single dispatch
 
 const SimpleRedux = () => {
   const initialState = store.getState();
