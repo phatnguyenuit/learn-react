@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
 import { createStore, combineReducers } from 'redux';
+
+// Implement combineReducers from scratch
+// import combineReducers from './combineReducers';
 import './styles.css';
 
 // assign default value for prevState
+/**
+ * Counter reducer
+ * @param {number} prevState
+ * @param {{type: string; payload: any}} action
+ * @returns {number} newState
+ */
 const counterReducer = (prevState = 0, action) => {
   const { type, payload } = action;
   switch (type) {
@@ -19,6 +28,12 @@ const counterReducer = (prevState = 0, action) => {
   }
 };
 
+/**
+ * Toggle reducer
+ * @param {boolean} prevState
+ * @param {{type: string; payload: any}} action
+ * @returns {boolean} newState
+ */
 const toggleReducer = (prevState = false, action) => {
   const { type } = action;
   switch (type) {
