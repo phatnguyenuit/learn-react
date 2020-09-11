@@ -8,16 +8,18 @@ import * as constants from './constants';
  * to make action types can be managed and updated easily
  */
 
-export const increase = (count = 1) => ({
-  type: constants.INCREASE,
-  payload: {
-    count,
-  },
-});
+export const fetchURL = (dispatch) => {
+  dispatch({
+    type: constants.FETCH_URL
+  });
 
-export const decrease = (count = 1) => ({
-  type: constants.DECREASE,
-  payload: {
-    count,
-  },
-});
+  fetch(`https://jsonplaceholder.typicode.com/users`)
+    .then(response => response.json())
+    .then(json => dispatch({
+      type: constants.FETCH_SUCCESS,
+      payload: json
+    })).catch(e => dispatch({
+      type: constants.FETCH_ERROR,
+      payload: e.message
+    }));
+};
