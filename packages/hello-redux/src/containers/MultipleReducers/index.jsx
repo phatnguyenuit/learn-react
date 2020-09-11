@@ -129,6 +129,9 @@ class MultipleReducers extends Component {
         <h4>Show you:</h4>
         <ul>
           <li>How to use multiple reducers in Redux ?</li>
+          <li>
+            What is <code>combineReducers</code> ? And how does it work ?
+          </li>
         </ul>
         <div>
           <div className="toogle-container">
