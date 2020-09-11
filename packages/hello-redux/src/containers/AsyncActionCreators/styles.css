@@ -1,0 +1,13 @@
+.app-root {
+  margin: 0 auto;
+  text-align: left;
+  width: 500px;
+}
+
+.fetcher-root {
+  padding: 16px;
+}
+
+.fetcher-root>button {
+  max-width: 50px;
+}
