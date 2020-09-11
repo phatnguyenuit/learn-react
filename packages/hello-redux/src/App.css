@@ -28,6 +28,10 @@
   color: #61dafb;
 }
 
+.App-content {
+  padding: 16px;
+}
+
 .flex {
   display: flex;
 }

@@ -19,7 +19,9 @@ function App() {
           Learn Redux
         </a>
       </header>
-      <LearningApp />
+      <main className="App-content">
+        <LearningApp />
+      </main>
     </div>
   );
 }
