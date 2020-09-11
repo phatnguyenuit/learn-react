@@ -102,6 +102,8 @@ const SimpleRedux = () => {
         <li>How to setup redux ?</li>
         <li>How does redux works?</li>
       </ul>
+      <hr />
+      <h4>Flow:</h4>
       <div>
         <code>
           Store =&gt; UI =&gt; Actions =&gt; Reducer =&gt; Store (updated)
@@ -132,6 +134,8 @@ const SimpleRedux = () => {
             <code>UI updated</code>
           </li>
         </ol>
+        <hr />
+        <h4>Example:</h4>
         <div className="flex flex-row flex-align-center counter-root">
           <button type="button" onClick={handleDecreaseWithCount(2)}>
             --

@@ -47,6 +47,8 @@ class UsingReactRedux extends Component {
             via component props
           </li>
         </ol>
+        <hr />
+        <h4>Example:</h4>
         <Provider store={store}>
           <Counter />
         </Provider>

@@ -133,6 +133,8 @@ class MultipleReducers extends Component {
             What is <code>combineReducers</code> ? And how does it work ?
           </li>
         </ul>
+        <hr />
+        <h4>Example:</h4>
         <div>
           <div className="toogle-container">
             <label htmlFor="toggle">Check: </label>

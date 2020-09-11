@@ -116,6 +116,8 @@ class SimpleReduxClassStyle extends Component {
           <li>How to setup redux ?</li>
           <li>How does redux works?</li>
         </ul>
+        <hr />
+        <h4>Flow:</h4>
         <div>
           <code>
             Store =&gt; UI =&gt; Actions =&gt; Reducer =&gt; Store (updated)
@@ -146,6 +148,8 @@ class SimpleReduxClassStyle extends Component {
               <code>UI updated</code>
             </li>
           </ol>
+          <hr />
+          <h4>Example:</h4>
           <div className="flex flex-row flex-align-center counter-root">
             <button type="button" onClick={this.handleDecreaseWithCount(2)}>
               --
