@@ -46,20 +46,28 @@ const mapStateToProps = state => {
 };
 
 // Embed store.dispatch to every single callback func of Counter
-const mapDispatchToProps = dispatch => {
-  return {
-    increase: count => {
-      console.log('Increase', count);
-      const action = increase(count);
-      dispatch(action);
-    },
-    decrease: count => {
-      console.log('Decrease', count);
-      const action = decrease(count);
-      dispatch(action);
-    },
-  };
+// by providing a diction of callbacks
+const mapDispatchToProps = {
+  increase,
+  decrease,
 };
+
+// Embed store.dispatch to every single callback func of Counter
+// with custom function mapDispatchToprops
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     increase: count => {
+//       console.log('Increase', count);
+//       const action = increase(count);
+//       dispatch(action);
+//     },
+//     decrease: count => {
+//       console.log('Decrease', count);
+//       const action = decrease(count);
+//       dispatch(action);
+//     },
+//   };
+// };
 
 // Connect state, embeded dispatch callacks and assign props to Counter
 export default connect(mapStateToProps, mapDispatchToProps)(Counter);
