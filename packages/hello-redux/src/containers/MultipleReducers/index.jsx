@@ -135,9 +135,10 @@ class MultipleReducers extends Component {
         </ul>
         <div>
           <div className="toogle-container">
-            <label>Check: </label>
+            <label htmlFor="toggle">Check: </label>
             <input
               type="checkbox"
+              id="toggle"
               checked={toggle}
               onChange={this.handleToggle}
             />
