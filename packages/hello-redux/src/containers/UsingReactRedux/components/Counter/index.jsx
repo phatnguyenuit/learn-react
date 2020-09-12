@@ -6,6 +6,8 @@ import { increase, decrease } from '../../redux/actionCreators';
 export function Counter(props) {
   const { value, increase, decrease } = props;
 
+  // Our mapped redux dispatch requires input params
+  // so we need to wrap it inside another handler
   const handleDecreaseWithCount = count => () => {
     decrease(count);
   };

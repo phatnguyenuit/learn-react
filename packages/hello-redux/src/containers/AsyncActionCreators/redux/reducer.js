@@ -1,22 +1,37 @@
 import * as constants from './constants';
 
-const reducer = (prevState = 0, action) => {
+const getInitialState = () => ({
+  loading: false,
+  data: undefined,
+  error: undefined
+});
+
+const reducer = (prevState = getInitialState(), action) => {
   const { type, payload } = action;
-  console.log(
-    `Dispatching action has type = '${type}' with payload:\n${JSON.stringify(
-      payload,
-      null,
-      2,
-    )}`,
-  );
   switch (type) {
-    case constants.INCREASE: {
-      const { count = 1 } = payload;
-      return prevState + count;
+    case constants.FETCH_URL: {
+      return {
+        ...prevState,
+        loading: true,
+        error: undefined,
+        data: undefined
+      };
     }
-    case constants.DECREASE: {
-      const { count = 1 } = payload;
-      return prevState - count;
+    case constants.FETCH_SUCCESS: {
+      return {
+        ...prevState,
+        data: payload,
+        loading: false,
+        error: undefined,
+      };
+    }
+    case constants.FETCH_ERROR: {
+      return {
+        ...prevState,
+        error: payload,
+        data: undefined,
+        loading: false,
+      };
     }
     default:
       return prevState;

@@ -21,6 +21,9 @@ class AsyncActionCreators extends Component {
             </a>
           </li>
           <li>
+            What is <code>thunk</code> ?
+          </li>
+          <li>
             How to setup{' '}
             <a
               href="https://github.com/reduxjs/redux-thunk"
@@ -32,6 +35,18 @@ class AsyncActionCreators extends Component {
             ?
           </li>
         </ul>
+        <hr />
+        <p>
+          <code>Thunk</code> is a function that returns another function.
+        </p>
+        <p>
+          That's the key, action creators in redux just return an action object.
+          So you need to manually dispatch multiple actions in only one action
+          creator, how?
+        </p>
+        <p>
+          Apply <code>redux-thunk</code> middleware.
+        </p>
         <hr />
         <h4>Usage:</h4>
         <ol>
