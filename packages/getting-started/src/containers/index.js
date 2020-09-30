@@ -8,6 +8,7 @@ import CallingAPIApp from './CallingAPIApp';
 import ContextApp from './ContextApp';
 import CustomerInvoiceFunctional from './CustomerInvoice/CustomerInvoiceFunctional';
 import CustomerInvoice from './CustomerInvoiceV2/CustomerInvoice';
+import Timer from './Timer/Timer';
 
 const apps = {
   counter: CounterApp,
@@ -19,7 +20,9 @@ const apps = {
   callingAPI: CallingAPIApp,
   context: ContextApp,
   customerinvoice: CustomerInvoiceFunctional,
-  customerinvoiceV2: CustomerInvoice
+  customerinvoiceV2: CustomerInvoice,
+  timer: Timer,
+  // timerV2: Timer
 };
 
 export default apps;
