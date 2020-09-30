@@ -7,6 +7,7 @@ import FunctionalApp from './FunctionalApp';
 import CallingAPIApp from './CallingAPIApp';
 import ContextApp from './ContextApp';
 import CustomerInvoiceFunctional from './CustomerInvoice/CustomerInvoiceFunctional';
+import CustomerInvoice from './CustomerInvoiceV2/CustomerInvoice';
 
 const apps = {
   counter: CounterApp,
@@ -17,7 +18,8 @@ const apps = {
   functionalApp: FunctionalApp,
   callingAPI: CallingAPIApp,
   context: ContextApp,
-  customerinvoice: CustomerInvoiceFunctional
+  customerinvoice: CustomerInvoiceFunctional,
+  customerinvoiceV2: CustomerInvoice
 };
 
 export default apps;
