@@ -6,6 +6,7 @@ import ChildrenApp from './ChildrenApp';
 import FunctionalApp from './FunctionalApp';
 import CallingAPIApp from './CallingAPIApp';
 import ContextApp from './ContextApp';
+import CustomerInvoiceFunctional from './CustomerInvoice/CustomerInvoiceFunctional';
 
 const apps = {
   counter: CounterApp,
@@ -16,6 +17,7 @@ const apps = {
   functionalApp: FunctionalApp,
   callingAPI: CallingAPIApp,
   context: ContextApp,
+  customerinvoice: CustomerInvoiceFunctional
 };
 
 export default apps;
